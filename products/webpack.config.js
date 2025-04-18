@@ -11,7 +11,8 @@ name:'products',
 filename: 'remoteEntry.js',
 exposes:{
     './ProductsIndex':'./src/index'
-}
+},
+shared:['faker'],
     }),
     new HtmlWebpackPlugin({
         template:'./public/index.html',
